@@ -9,10 +9,10 @@
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>    
+  <body>  
   <%= render 'shared/portfolio_nav' %>
     <!-- start of mast head -->
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
