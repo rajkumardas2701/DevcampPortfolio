@@ -5,3 +5,4 @@
 //= link HardDrivePhotojpeg.mp4
 //= link_directory ../stylesheets .css
 //= link_tree .
+import '../stylesheets/application'

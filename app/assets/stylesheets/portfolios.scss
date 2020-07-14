@@ -1,5 +1,5 @@
-@import "bootstrap";
-@import "jquery-ui";
+@import 'bootstrap/scss/bootstrap';
+@import 'jquery-ui';
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -60,7 +60,9 @@ footer p {
   margin-bottom: .25rem;
 }
 
-/* custom styles */
+/* 
+*custom styles 
+*/
 
 .portfolio-container {
   padding-top: 30px;
