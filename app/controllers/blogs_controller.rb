@@ -1,13 +1,13 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
-  layout "blog"
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
+  before_action :set_blog, only: %i[show edit update destroy toggle_status]
+  layout 'blog'
+  access all: %i[show index], user: { except: %i[destroy new create update edit toggle_status] }, site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
   def index
     @blogs = Blog.page(params[:page]).per(5)
-    @page_title = "My Portfolio Blog"
+    @page_title = 'My Portfolio Blog'
   end
 
   # GET /blogs/1
@@ -23,8 +23,7 @@ class BlogsController < ApplicationController
   end
 
   # GET /blogs/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /blogs
   # POST /blogs.json
@@ -61,9 +60,9 @@ class BlogsController < ApplicationController
     end
   end
 
-  def toggle_status    
+  def toggle_status
     if @blog.draft?
-      @blog.published! 
+      @blog.published!
     elsif @blog.published?
       @blog.draft!
     end
@@ -72,13 +71,14 @@ class BlogsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_blog
-      @blog = Blog.friendly.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def blog_params
-      params.require(:blog).permit(:title, :body)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_blog
+    @blog = Blog.friendly.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def blog_params
+    params.require(:blog).permit(:title, :body)
+  end
 end

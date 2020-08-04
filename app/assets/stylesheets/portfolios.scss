@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import "jquery-ui";
+// @import "jquery-ui";
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -38,13 +38,13 @@ body {
 .card {
   float: left;
   width: 33.333%;
-  padding: .75rem;
+  padding: 0.75rem;
   margin-bottom: 2rem;
   border: 0;
 }
 
 .card > img {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .card-text {
@@ -57,7 +57,7 @@ footer {
 }
 
 footer p {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 /* custom styles */

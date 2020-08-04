@@ -30,32 +30,34 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry-byebug'
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'friendly_id', '~> 5.2.4'
-gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'bootstrap', '~> 4.5.0'
+gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'friendly_id', '~> 5.2.4'
 gem 'jquery-rails'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem 'devcamp_view_tool', git: "https://github.com/rajkumardas2701/devcamp_view_tool"
-gem 'petergate', '~> 2.0', '>= 2.0.1'
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
-gem 'kaminari', '~> 1.2', '>= 1.2.1'
-gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 2.1'
-gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'carrierwave-aws', '~> 1.5'
+gem 'devcamp_view_tool', git: 'https://github.com/rajkumardas2701/devcamp_view_tool'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
+gem 'figaro'
+gem 'fog'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+gem 'petergate', '~> 2.0', '>= 2.0.1'
