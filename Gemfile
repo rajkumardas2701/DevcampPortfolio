@@ -44,7 +44,6 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'bootstrap', '~> 4.5.0'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'friendly_id', '~> 5.2.4'
 gem 'jquery-rails'
@@ -61,3 +60,5 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+gem 'rails_sortable'
+gem 'acts-as-list'

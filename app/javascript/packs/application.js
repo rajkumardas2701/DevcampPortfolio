@@ -10,12 +10,22 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-import 'bootstrap'
+import "bootstrap"
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("html.sortable")
 require("jquery")
+require("jquery_ujs")
+require("jquery-ui/widget")
+require("jquery-ui/sortable")
+require("rails_sortable")
+require("html5sortable")
+
+// Bulletins Drag & Drop Sortable
+$(function () {
+    $('.sortable').railsSortable();
+});
+
