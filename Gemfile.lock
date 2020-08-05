@@ -63,13 +63,12 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
+    acts-as-list (0.1.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     aliyun-sdk (0.7.3)
       nokogiri (~> 1.6)
       rest-client (~> 2.0)
-    autoprefixer-rails (9.8.4)
-      execjs
     aws-eventstream (1.1.0)
     aws-partitions (1.341.0)
     aws-sdk-core (3.103.0)
@@ -90,10 +89,6 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
-    bootstrap (4.5.0)
-      autoprefixer-rails (>= 9.1.0)
-      popper_js (>= 1.14.3, < 2)
-      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     byebug (11.1.3)
     carrierwave (2.1.0)
@@ -126,7 +121,6 @@ GEM
     dry-inflector (0.2.0)
     erubi (1.9.0)
     excon (0.76.0)
-    execjs (2.7.0)
     faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
     ffi (1.13.0)
@@ -382,7 +376,6 @@ GEM
     petergate (2.0.1)
       activerecord (> 4.0.0)
     pg (1.2.3)
-    popper_js (1.16.0)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -417,6 +410,7 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
+    rails_sortable (1.4.1)
     railties (6.0.3.1)
       actionpack (= 6.0.3.1)
       activesupport (= 6.0.3.1)
@@ -512,8 +506,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-list
   bootsnap (>= 1.4.2)
-  bootstrap (~> 4.5.0)
   byebug
   carrierwave (~> 2.1)
   carrierwave-aws (~> 1.5)
@@ -535,6 +529,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
+  rails_sortable
   sass-rails (>= 6)
   spring
   spring-watcher-listen (~> 2.0.0)

@@ -1,7 +1,11 @@
 //= link_tree ../images
+//= link_directory ../stylesheets .css
 //= link application.css
 //= link portfolios.css
 //= link blogs.css
 //= link HardDrivePhotojpeg.mp4
-//= link_directory ../stylesheets .css
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui/widgets/sortable
+//= require rails_sortable
 //= link_tree .
