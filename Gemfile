@@ -62,3 +62,4 @@ gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'rails_sortable'
 gem 'acts-as-list'
+gem "cocoon"
