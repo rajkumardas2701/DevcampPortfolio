@@ -63,3 +63,4 @@ gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'rails_sortable'
 gem 'acts-as-list'
 gem "cocoon"
+gem 'gritter', '~> 1.2.0'

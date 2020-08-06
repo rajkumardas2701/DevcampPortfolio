@@ -1,11 +1,10 @@
 class Portfolio < ApplicationRecord
-  has_many :technologies
+  has_many :technologies, dependent: :destroy
   accepts_nested_attributes_for :technologies,
                                 allow_destroy: true,
                                 reject_if: ->(attrs) { attrs['name'].blank? }
 
-  validates_presence_of :title, :body
-  # , :main_image, :thumb_image
+  validates_presence_of :title, :body, :main_image, :thumb_image
 
   mount_uploader :thumb_image, PortfolioUploader
   mount_uploader :main_image, PortfolioUploader

@@ -24,6 +24,7 @@ require("jquery-ui/sortable")
 require("rails_sortable")
 require("html5sortable")
 require("cocoon")
+require("gritter/js/jquery.gritter.js")
 require("turbolinks").start()
 
 
