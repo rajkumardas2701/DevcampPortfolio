@@ -4,7 +4,7 @@ class PagesController < ApplicationController
     @skills = Skill.all
   end
 
-  def abou; end
+  def about; end
 
   def contact; end
 end
