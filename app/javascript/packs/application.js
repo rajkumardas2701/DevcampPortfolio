@@ -29,7 +29,7 @@ require("turbolinks").start()
 
 
 // Bulletins Drag & Drop Sortable
-$(function () {
-    $('.sortable').railsSortable();
-});
+// $(function () {
+//     $('.sortable').railsSortable();
+// });
 
