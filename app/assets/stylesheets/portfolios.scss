@@ -17,6 +17,10 @@ body {
   background-color: #fff;
 }
 
+footer p {
+  margin-bottom: 0.25rem;
+}
+
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
@@ -57,10 +61,6 @@ footer {
   padding-bottom: 3rem;
 }
 
-footer p {
-  margin-bottom: 0.25rem;
-}
-
 /* custom styles */
 
 .portfolio-container {
@@ -69,4 +69,8 @@ footer p {
 
 .explore-mr {
   text-align: center;
+}
+
+.portfolio-title {
+  font-size: large;
 }

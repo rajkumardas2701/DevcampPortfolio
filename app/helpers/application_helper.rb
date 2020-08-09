@@ -9,10 +9,8 @@ module ApplicationHelper
   end
 
   def source_helper(layout_name)
-    if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are in the #{layout_name} layout"
-      content_tag(:p, greeting, class: 'source_greeting')
-    end
+    # greeting = "Thanks for visiting me from #{session[:source]} and you are in the #{layout_name} layout"
+    # return content_tag(:p, greeting, class: 'source_greeting') unless session[:source]
   end
 
   def copyright_generator

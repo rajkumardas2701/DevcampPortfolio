@@ -13,9 +13,7 @@
 
   <body>  
   <%= render 'shared/portfolio_nav' %>
-    <!-- start of mast head -->
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
-    <!-- end of mast head -->
     
     <%= yield %>
     <%= render 'shared/portfolio_footer' %>
