@@ -22,7 +22,6 @@ a:hover {
   border: 0.05rem solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -43,7 +42,6 @@ body {
 .cover-container {
   max-width: 55em;
 }
-
 
 /*
  * Header
@@ -88,7 +86,6 @@ body {
   }
 }
 
-
 /*
  * Cover
  */
@@ -100,7 +97,6 @@ body {
   padding: 0.75rem 1.25rem;
   font-weight: 700;
 }
-
 
 /*
  * Footer
@@ -148,7 +144,8 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url("home_bg1.jpg") no-repeat;
+  background-image: url("home_bg1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
