@@ -28,7 +28,7 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
-    3.times { @portfolio_items.technologies.build }
+    # 3.times { @portfolio_items.technologies.build }
   end
 
   def update
