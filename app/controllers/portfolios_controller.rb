@@ -61,7 +61,7 @@ class PortfoliosController < ApplicationController
                                       :thumb_image,
                                       :github_link,
                                       :demo_link,
-                                      technologies_attributes: [:id, :name, :_destroy])
+                                      technologies_attributes: %i[id name _destroy])
   end
 
   def set_portfolio_item
