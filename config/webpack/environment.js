@@ -8,4 +8,6 @@ environment.plugins.append(
     Popper: ['popper.js', 'default']
   })
 )
+const coffee = require('./loaders/coffee')
+environment.loaders.append('coffee', coffee)
 module.exports = environment
