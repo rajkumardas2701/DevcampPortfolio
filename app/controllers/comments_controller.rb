@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   # def new
   #   @comment = Comment.new
   # end
-  
+
   def create
     @comment = current_user.comments.build(comment_params)
     # byebug
@@ -11,11 +11,10 @@ class CommentsController < ApplicationController
     #   # format.html { render blog }
     #     ActionCable.server.broadcast 'blogs_channel',
     #                                 content: @comment.content
-    #     # ActionCable.server.broadcast "blogs_channel", 
+    #     # ActionCable.server.broadcast "blogs_channel",
     #     #                                 comment: render_comment(@comment)
     # end
   end
-
 
   private
 

@@ -3,9 +3,7 @@ class BlogsChannel < ApplicationCable::Channel
     stream_from "blogs_#{params['blog_id']}_channel"
   end
 
-  def unsubscribe
-
-  end
+  def unsubscribe; end
 
   def send_comment(data)
     # console.log(data.content)
