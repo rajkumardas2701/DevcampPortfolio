@@ -15,10 +15,11 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import 'cocoon-js'
 require("@rails/ujs").start()
+require("turbolinks").start()
+require("jquery")
 require("@rails/activestorage").start()
 require("channels")
-require("jquery")
-require("cable")
+// require("cable")
 // require("jquery_ujs")
 // require("jquery-ui/widget")
 // require("jquery-ui/sortable")
@@ -26,7 +27,7 @@ require("cable")
 // require("html5sortable")
 // require("cocoon")
 // require("gritter/js/jquery.gritter.js")
-require("turbolinks").start()
+
 
 
 // Bulletins Drag & Drop Sortable
@@ -34,3 +35,8 @@ require("turbolinks").start()
 //     $('.sortable').railsSortable();
 // });
 
+$(document).on('turbolinks:load', function(){
+    console.log('Hello, we are here')
+}
+
+)
